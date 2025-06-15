@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fed6ff 0%, #d7d3ff 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  background-color: rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 90%;
+}
+
+#time {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#value {
+  font-family: "Courier New", monospace;
+  color: #21005d;
+  font-size: 1.2rem;
+}
+
+#taskName {
+  font-size: 1.2rem;
+  color: #21005d;
+  min-height: 1.5rem;
+}
+
+.form {
+  margin-bottom: 1.5rem;
+  padding: 0 3rem;
+}
+
+.form form {
+  display: flex;
+  gap: 1rem;
+}
+
+#bAdd {
+  padding: 0.75rem 1.5rem;
+  background: #d756e3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#bAdd:hover {
+  background: #8d5892;
+}
+
+#itTask {
+  flex: 1;
+  padding: 0.75rem;
+  border: 0px solid #fafafa;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#itTask:focus {
+  border-color: #3498db;
+}
+
+#tasks{
+    margin-bottom: 2rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin: 0 3rem 0.5rem 3rem;
+  transition: all 0.3s ease;
+}
+
+.task:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.start-button {
+  padding: 0.5rem 1rem;
+  background: #B4394E;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+.start-button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
