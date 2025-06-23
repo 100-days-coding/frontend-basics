@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basecoat-css@0.2.5/dist/basecoat.cdn.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/basecoat-css@0.2.5/dist/js/all.min.js"
+      defer
+    ></script>
+  </head>
+ <body class="bg-gray-100">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="card w-full max-w-md p-6">
+        <header class="mb-4 text-center">
+          <h2 class="text-2xl font-bold">Login to your account</h2>
+          <p class="text-gray-600 text-sm">
+            Enter your details below to login to your account
+          </p>
+        </header>
+        <section>
+          <form class="form grid gap-6">
+            <div class="grid gap-2">
+              <label for="demo-card-form-email">Email</label>
+              <input type="email" id="demo-card-form-email" />
+            </div>
+            <div class="grid gap-2">
+              <div class="flex items-center gap-2">
+                <label for="demo-card-form-password">Password</label>
+                <a
+                  href="#"
+                  class="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                  >Forgot your password?</a
+                >
+              </div>
+              <input type="password" id="demo-card-form-password" />
+            </div>
+            <footer class="flex flex-col gap-2">
+              <button type="submit" class="btn w-full">Login</button>
+              <button type="button" class="btn-outline w-full">
+                Login with Google
+              </button>
+              <p class="mt-4 text-center text-sm">
+                Don't have an account?
+                <a href="#" class="underline-offset-4 hover:underline">Sign up</a>
+              </p>
+            </footer>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
