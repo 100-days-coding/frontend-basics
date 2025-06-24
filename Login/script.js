@@ -8,8 +8,8 @@
   document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault(); // Evita que se recargue la página
 
-    const emailInput = document.getElementById("demo-card-form-email").value;
-    const passwordInput = document.getElementById("demo-card-form-password").value;
+    const emailInput = document.getElementById("formemail").value;
+    const passwordInput = document.getElementById("formpassword").value;
 
     // Validar
     if (
